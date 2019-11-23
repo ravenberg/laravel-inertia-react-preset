@@ -1,0 +1,7 @@
+/vendor
+composer.lock
+/phpunit.xml
+.phpunit.result.cache
+composer.lock
+.DS_Store
+Thumbs.db
