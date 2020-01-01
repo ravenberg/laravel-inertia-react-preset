@@ -97,11 +97,18 @@ class InertiaReactPreset extends Preset
     }
 
     /**
-     * Override the webpack.mix.js file with the preset's one
+     * Override the webpack.mix.js file with the preset's one and configure it
      */
     public static function configureMix()
     {
-        File::copy(__DIR__.'/stubs/webpack.mix.js', base_path('webpack.mix.js'));
+        $webpackConfigBasePath = base_path('webpack.mix.js');
+        File::copy(__DIR__.'/stubs/webpack.mix.js', $webpackConfigBasePath);
+        $rootDirectoryName = Arr::last(explode('/', base_path()));
+        file_put_contents($webpackConfigBasePath, str_replace(
+            'laravel.test',
+            $rootDirectoryName . '.test',
+            file_get_contents($webpackConfigBasePath)
+        ));
     }
 
     /**
