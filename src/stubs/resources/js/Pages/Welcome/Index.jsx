@@ -9,7 +9,7 @@ class Index extends React.Component {
             <div>
                 <h1>Inertia React Boilerplate</h1>
 
-                <InertiaLink href="/login" method='POST'>
+                <InertiaLink href="/login" method='GET'>
                     Login
                 </InertiaLink>
             </div>

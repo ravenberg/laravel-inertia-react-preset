@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Inertia } from '@inertiajs/inertia';
 import { InertiaLink } from '@inertiajs/inertia-react';
-import Error from "../../../Components/FlashMessages/Error";
+import Error from "../../Components/FlashMessages/Error";
 
 class Login extends React.Component {
 
@@ -56,7 +56,7 @@ class Login extends React.Component {
                                 className="text-blue-800"
                                 href="/password/reset"
                             >
-                                Wachtwoord Vergeten
+                                Forgot password
                             </InertiaLink>
                         </li>
                         <li>

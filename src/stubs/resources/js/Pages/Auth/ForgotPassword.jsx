@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Inertia } from '@inertiajs/inertia';
-import Error from '../../../Components/FlashMessages/Error';
+import Error from "../../Components/FlashMessages/Error";
 
 class ForgotPassword extends React.Component {
 
