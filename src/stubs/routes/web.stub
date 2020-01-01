@@ -14,7 +14,7 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function() {
-    return Inertia::render('Welcome/Index');
+    return Inertia::render('Index');
 });
 
 Auth::routes();

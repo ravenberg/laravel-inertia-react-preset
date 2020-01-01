@@ -7,7 +7,7 @@ class Index extends React.Component {
 
         return (
             <div>
-                <h1>{'InertiaJS + React + Tailwind = <3'}</h1>
+                <h1>{'InertiaJS + React + Tailwind = 💜'}</h1>
 
                 <InertiaLink href="/login" method='GET'>
                     login

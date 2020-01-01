@@ -15,8 +15,8 @@ class InertiaReactPresetServiceProvider extends ServiceProvider
     {
         PresetCommand::macro('inertia-react', function(Command $command) {
             InertiaReactPreset::install($command);
-            $command->info('Inertiajs with Reactjs scaffolding complete.');
-            $command->info('Don\'t forget to run npm install && npm run dev');
+            $command->info('🎉 Inertiajs with Reactjs scaffolding complete.');
+            $command->info('ℹ️ Don\'t forget to run npm install && npm run dev');
         });
     }
 }
