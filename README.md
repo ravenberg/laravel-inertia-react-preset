@@ -29,4 +29,4 @@ Pull in dependencies and run a build
 $ npm install && npm run dev
 ```
 
-🎉 You're all set time to develop your app.
+🎉 You're all set. Time to craft your app.
