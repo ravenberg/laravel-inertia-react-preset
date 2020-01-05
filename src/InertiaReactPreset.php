@@ -188,7 +188,8 @@ class InertiaReactPreset extends Preset
     }
 
     /**
-     * Export the Auth controllers that override the default ones that try to render blade views.
+     * Export the Auth controllers that override the default ones that try to render blade views. Also exports the
+     * dashboard controller.
      */
     public static function exportAuthControllers()
     {
@@ -198,6 +199,7 @@ class InertiaReactPreset extends Preset
         File::copy(__DIR__.'/stubs/Controllers/Auth/ForgotPasswordController.stub', app_path('Http/Controllers/Auth/ForgotPasswordController.php'));
         File::delete(app_path('Http/Controllers/ResetPasswordController.php'));
         File::copy(__DIR__.'/stubs/Controllers/Auth/ResetPasswordController.stub', app_path('Http/Controllers/Auth/ResetPasswordController.php'));
+        File::copy(__DIR__.'/stubs/Controllers/DashboardController.stub', app_path('Http/Controllers/DashboardController.php'));
     }
 
     /**
